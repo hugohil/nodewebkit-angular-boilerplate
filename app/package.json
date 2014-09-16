@@ -1,0 +1,22 @@
+{
+  "main": "index.html",
+  "name": "placeholder",
+  "description": "",
+  "version": "0.1.0",
+  "keywords": [ "node-webkit" ],
+  "window": {
+    "title": "placeholder",
+    "width": 800,
+    "height": 500,
+    "position": "center",
+    "min_width": 400,
+    "min_height": 200,
+    "max_width": 800,
+    "max_height": 600,
+    "toolbar": true,
+    "frame": false
+  },
+  "webkit": {
+    "plugin": true
+  }
+}

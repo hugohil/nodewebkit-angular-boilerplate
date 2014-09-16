@@ -1,0 +1,27 @@
+{
+  "name": "placeholder",
+  "version": "0.0.0",
+  "authors": [
+    "hugohil <hugo@soixantecircuits.fr>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.24",
+    "angular-route": "~1.2.24",
+    "angular-touch": "~1.2.24",
+    "angular-sanitize": "~1.2.24",
+    "angular-cookies": "~1.2.24",
+    "angular-animate": "~1.2.24"
+  }
+}
