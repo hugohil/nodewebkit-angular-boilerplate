@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
     var name = grunt.option('name') || 'yourAppName';
-    grunt.log.write(name);
+    var author = grunt.option('author') || 'your name';
 
     // Project configuration.
     grunt.initConfig({
@@ -50,6 +50,14 @@ module.exports = function(grunt) {
                 replacements: [{
                     from: 'yourAppName',                   // string replacement
                     to: name
+                }]
+            },
+            author: {
+                src: ['bower.json', 'package.json', 'Gruntfile.js'],
+                overwrite: true,
+                replacements: [{
+                    from: 'your name',
+                    to: author
                 }]
             }
         }
