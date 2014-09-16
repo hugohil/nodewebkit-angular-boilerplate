@@ -41,11 +41,11 @@ module.exports = function(grunt) {
                platforms: ['linux64'], // Don't forget to change this for your platform
                buildDir: 'webkitbuilds', // Where the build version of my node-webkit app is saved
             },
-            src: ['dist/**'] // Your node-webkit app
+            src: ['dist/**/*'] // Your node-webkit app
         },
         replace: {
             appName: {
-                src: ['app/**/*.js', 'app/**/*.html', 'Gruntfile.js', 'bower.json', 'package.json'],             // source files array (supports minimatch)
+                src: ['app/**/*.js', 'app/**/*.html', 'app/package.json', 'Gruntfile.js', 'bower.json', 'package.json'],             // source files array (supports minimatch)
                 overwrite: true,
                 replacements: [{
                     from: 'yourAppName',                   // string replacement
@@ -77,6 +77,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.registerTask('default', ['copy', 'connect', 'watch:browser']);
-    grunt.registerTask('nw', ['nodewebkit', 'run-nodewebkit', 'watch:nw']);
+    grunt.registerTask('nw', ['copy', 'nodewebkit', 'run-nodewebkit', 'watch:nw']);
     grunt.registerTask('init', ['replace']);
 }

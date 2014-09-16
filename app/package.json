@@ -1,11 +1,11 @@
 {
   "main": "index.html",
-  "name": "placeholder",
+  "name": "yourAppName",
   "description": "",
   "version": "0.1.0",
   "keywords": [ "node-webkit" ],
   "window": {
-    "title": "placeholder",
+    "title": "yourAppName",
     "width": 800,
     "height": 500,
     "position": "center",
