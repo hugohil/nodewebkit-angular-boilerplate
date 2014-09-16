@@ -45,7 +45,7 @@ module.exports = function(grunt) {
         },
         replace: {
             appName: {
-                src: ['app/**/*.js', 'app/**/*.html', 'Gruntfile.js'],             // source files array (supports minimatch)
+                src: ['app/**/*.js', 'app/**/*.html', 'Gruntfile.js', 'bower.json', 'package.json'],             // source files array (supports minimatch)
                 overwrite: true,
                 replacements: [{
                     from: 'yourAppName',                   // string replacement
