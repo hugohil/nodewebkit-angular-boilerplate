@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
     var name = grunt.option('name') || 'yourAppName';
     var author = grunt.option('author') || 'your name';
+    var platform = grunt.option('platform') || 'linux64';
 
     // Project configuration.
     grunt.initConfig({
@@ -38,7 +39,7 @@ module.exports = function(grunt) {
         },
         nodewebkit: {
             options: {
-               platforms: ['linux64'], // Don't forget to change this for your platform
+               platforms: [platform], // Don't forget to change this for your platform
                buildDir: 'webkitbuilds', // Where the build version of my node-webkit app is saved
             },
             src: ['dist/**/*'] // Your node-webkit app
@@ -58,6 +59,14 @@ module.exports = function(grunt) {
                 replacements: [{
                     from: 'your name',
                     to: author
+                }]
+            },
+            nwPlatform: {
+                src: ['Gruntfile.js'],
+                overwrite: true,
+                replacements: [{
+                    from: 'linux64',
+                    to: platform
                 }]
             }
         }
