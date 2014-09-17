@@ -32,4 +32,4 @@ $ sed -i 's/udev\.so\.0/udev.so.1/g' cache/**/linux*/nw
 ```
 You can [see here](https://github.com/rogerwang/node-webkit/wiki/The-solution-of-lacking-libudev.so.0) for explanations.
 
-Also note that Debian stable version doesn't support node webkit, you have to go unstable.
+Also note that Debian stable version doesn't support node webkit, you have to go testing or unstable.
