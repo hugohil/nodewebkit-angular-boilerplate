@@ -2,9 +2,9 @@
 
 /**
 * @ngdoc overview
-* @name DiorScannerApp
+* @name yourAppNameApp
 * @description
-* # DiorScannerApp
+* # yourAppNameApp
 *
 * Main module of the application.
 */
