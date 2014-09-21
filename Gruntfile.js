@@ -30,7 +30,7 @@ module.exports = function(grunt) {
             },
             browser: {
                 files: ['app/**'],
-                tasks: ['copy;files']
+                tasks: ['copy:files']
             },
             nw: {
                 files: ['app/**'],
